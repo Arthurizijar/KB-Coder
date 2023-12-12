@@ -1,0 +1,25 @@
+'''
+Please use the functions defined below to generate the expression corresponding to the question step by step.
+'''
+def START(entity: str):
+    return entity
+
+def JOIN(relation: str, expression: str):
+    return '(JOIN {} {})'.format(relation, expression)
+
+def AND(expression:str, sub_expression: str):
+    return '(AND {} {})'.format(expression, sub_expression)
+
+def ARG(operator: str, expression: str, relation: str):
+    assert operator in ['ARGMAX', 'ARGMIN']
+    return '({} {} {})'.format(operator, expression, relation)
+
+def CMP(operator: str, relation: str, expression: str):
+    assert operator in ['<', '<=', '>', '>=']
+    return '({} {} {})'.format(operator, relation, expression)
+
+def COUNT(expression: str):
+    return '(COUNT {})'.format(expression)
+
+def STOP(expression: str):
+    return expression

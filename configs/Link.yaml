@@ -1,0 +1,25 @@
+# Origin
+entity_surface_name_file: 'Path to freebase file <surface_map_file_freebase_complete_all_mention>'
+abs_entity_name_file: "Path to freebase file <fb_types>"
+relation_triple_directory: 'Path to freebase file <triple_edges_parts>'
+
+# Generated
+entity_index_file: 'Generated entity suface name index file'
+entity_json_file: 'Generated entity suface name json file'
+
+abs_entity_index_file: 'Generated abstract entity name index file'
+abs_entity_json_file: 'Generated abstract entity name json file'
+
+relation_index_file: 'Generated relation index file'
+relation_json_file: 'Generated relation json/txt file'
+
+# Others
+entity_topk: 15
+relation_topk: 100
+
+embed_model: 'Path to SimCSE model'
+
+fb_roles: "Path to freebase file <fb_roles>"
+fb_types: "Path to freebase file <fb_types>"
+reverse_properties: "Path to freebase file <reverse_properties>"
+id2name_parts: "Path to freebase directory <id2name_parts>"

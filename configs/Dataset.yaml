@@ -1,0 +1,31 @@
+train_file: 'WQ/GrailQA/GraphQ train file'
+test_file: 'WQ/GraphQ test file, GrailQA dev file'
+
+cache_file: 'Generated train dataset index cache'
+
+query_file: 'Generated gpt query file'
+gpt_answer_file: 'Generated answer file by gpt'
+final_answer_file: 'Generated final answer file (.xlsx)'
+
+database_cache: ''
+
+embed_model: 'Path to SimCSE model'
+sample_type: '<slice_random> or <topk>'
+seed: 42
+k: 40
+completions_generate: 6
+
+entity_result_file: 'Generated cache for entity link'
+relation_result_file: 'Generated cache for relation link'
+
+api_key: 'Openai API Key'
+proxy_url: 'Proxy URL'
+request_url: 'https://api.openai.com/v1/chat/completions'
+model: 'gpt-3.5-turbo-16k'
+#request_url: 'https://api.openai.com/v1/completions'
+#model: 'text-davinci-003'
+temperature: 0.7
+max_tokens: 300
+
+selector_desc: '/home/LAB/niezj/KBQA_wLLM/configs/instruction4grailQA.txt'
+selector_temp: 'question>:{}\n<s-expression>:{}\n<action>:{},{}'
